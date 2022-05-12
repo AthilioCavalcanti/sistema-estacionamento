@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Estacionamento</title>
+</head>
+<body>
+    <div class="entrada">
+        <form action="/">
+            <div class="container">
+                <label for="modelo">Modelo do veículo: </label>
+                <input
+                    type="text"
+                    id="modelo"
+                    placeholder="Digite o modelo do veículo!"
+                    autocomplete="off"
+                >
+            </div>
+            <div class="container">
+                <label for="placa">Placa do veículo: </label>
+                <input
+                    type="text"
+                    id="placa"
+                    placeholder="Digite a placa do veículo!"
+                    autocomplete="off"
+                >
+            </div>
+            <button id="btn-cadastrar">Cadastrar</button>
+        </form>
+
+        <div class="info-estacionamento">
+            <div>Total de vagas: <span id="total-vagas"></span></div>
+            <div>Carros estacionados: <span id="total-carros"></span></div>
+            <div>Vagas disponíveis: <span id="vagas-disponiveis"></span></div>
+        </div>
+
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Modelo</th>
+                <th>Placa</th>
+                <th>Entrada</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="patio"></tbody>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>

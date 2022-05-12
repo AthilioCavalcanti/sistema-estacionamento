@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.entrada {
+    height: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+form, form button{
+    font-weight: 700;
+}
+
+form , div.info-estacionamento{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 1.2rem;
+}
+
+form input, form button{
+    padding: 3px 12px;
+
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+table {
+    width: 100vw;
+
+    background-color: dimgray;
+}
+
+
+table thead {
+    background-color: aquamarine;
+}
+
+thead tr th, tbody tr td {
+    height: 50px;
+
+    text-align: center;
+}
+
+tbody {
+    color: white;
+}
+
+button.delete {
+    padding: 5px 10px;
+
+    border: none;
+    border-radius: 20px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
